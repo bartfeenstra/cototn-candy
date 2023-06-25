@@ -1,4 +1,4 @@
 {
     "debug": true,
-    "cacheDirectory": "~/.betty/cache/betty.extension.CottonCandy/babel"
+    "cacheDirectory": "/tmp/.betty/cache/betty.extension.CottonCandy/babel"
 }
