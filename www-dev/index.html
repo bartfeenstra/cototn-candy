@@ -43,7 +43,7 @@
                 </a>
 
                 <div class="d-flex">
-                    <a class="icon icon-search align-self-end" href="#search" data-bs-toggle="offcanvas"
+                    <a class="icon icon-search align-self-end" href="#search" data-bs-toggle="modal"
                        data-bs-target="#search"
                        aria-controls="search" aria-expanded="false" aria-label="Toggle search" title="Open the search">
                     </a>
@@ -100,25 +100,30 @@
             </div>
         </div>
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="search"
+        <div class="modal" tabindex="-1" id="search"
              aria-labelledby="search-label">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="search-label">Search</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <form>
-                    <input id="search-query" type="search"
-                           placeholder="E.g. 'Bart'">
-                    <label for="search-query" title="Search">Search</label>
-                </form>
-                <div id="search-expanded">
-                    <p id="search-instructions">
-                        Use <kbd>↑</kbd> and <kbd>↓</kbd> to navigate results, or <kbd>esc</kbd> to exit the
-                        search. Search again with <kbd>s</kbd>.
-                    </p>
-                    <div id="search-results-twilight">
-                        <div id="search-results-container"></div>
+            <div class="modal-dialog modal-fullscreen-md-down">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="search-label">Search</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <input id="search-query" type="search"
+                                   placeholder="E.g. 'Bart'">
+                            <label for="search-query" class="visually-hidden">Search</label>
+                        </form>
+                        <div id="search-expanded">
+                            <p id="search-instructions">
+                                Use <kbd>↑</kbd> and <kbd>↓</kbd> to navigate results, or <kbd>esc</kbd> to exit the
+                                search. Search again with <kbd>s</kbd>.
+                            </p>
+                            <div id="search-results-twilight">
+                                <div id="search-results-container"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

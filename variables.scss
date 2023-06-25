@@ -18,14 +18,12 @@ $cta-active-color: #ff69b4;
 $link-color: #149988;
 $link-active-color: #2a615a;
 $primary: $cta-color;
-$link-color: $link-color;
 $navbar-light-brand-color: #333333;
 // @todo Set #fff as a named variable. What to call it?
-$navbar-light-brand-hover-color: #fff;
-$navbar-light-brand-hover-bg: $cta-active-color;
 // @todo Set #333333 as a named variable. What to call it?
 $body-color: #333333;
-$body-bg: #eeeeee;
+// @todo Set #f7f7f7 as a named variable. What to call it?
+$body-bg: #f7f7f7;
 $border-width: 0;
 
 // Decoration.
@@ -49,3 +47,6 @@ $icon-search-active-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.
 
 // Close button.
 $btn-close-bg: $icon-close-url;
+
+// Accessibility;
+$focus-ring-box-shadow: 0;
