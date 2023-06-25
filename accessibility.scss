@@ -1,0 +1,24 @@
+.with-js .js-visually-hidden {
+  @extend .visually-hidden;
+}
+
+// @todo Can we use Bootstrap's focus ring for this?
+@mixin text-focus {
+  background-color: $cta-active-color;
+  box-shadow: 0 -2px $cta-active-color, 0 0.2rem $body-color;
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+
+#skip-to-page-content {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1500;
+}
+
+//*::selection {
+//  @include text-focus()
+//}

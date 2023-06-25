@@ -1,0 +1,6 @@
+.nav-link {
+  &.active {
+    box-shadow: 0 0.2rem $link-active-color;
+    color: $link-active-color;
+  }
+}
