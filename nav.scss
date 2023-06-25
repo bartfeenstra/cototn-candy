@@ -1,4 +1,19 @@
+.navbar-brand {
+  color: #333 !important;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-active-color;
+  }
+}
+
 .nav-link {
+  text-decoration: none;
+
+  &:visited {
+    color: $link-color;
+  }
+
   &.active {
     box-shadow: 0 0.2rem $link-active-color;
     color: $link-active-color;
