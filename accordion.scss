@@ -1,0 +1,7 @@
+.accordion-button {
+  font-weight: bold;
+
+  &:focus {
+    @include text-focus();
+  }
+}

@@ -10,6 +10,21 @@
 //  padding: 0 0.3rem;
 //}
 
-.lead {
-  font-weight: 400;
+//.lead {
+//  font-weight: 400;
+//}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $green-10;
+  font-weight: bold;
+}
+
+
+
+*:target {
+  outline: $spacer * 0.5 solid $cta-active-color;
+}
+
+.navbar-brand {
+  font-weight: bold;
 }

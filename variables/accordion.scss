@@ -1,0 +1,11 @@
+$accordion-button-icon: $icon-expand-url;
+$accordion-button-active-icon: $icon-collapse-url;
+$accordion-icon-width: 2rem;
+$accordion-button-active-bg: $body-bg;
+$accordion-icon-transform: rotateX(180deg);
+$accordion-transition: $btn-transition, border-radius .5s ease;
+$accordion-icon-transition: transform .25s ease-in-out;
+$accordion-button-color: $green-10;
+$accordion-button-active-color: $green-10;
+$accordion-padding-x: none;
+$accordion-padding-y: none;

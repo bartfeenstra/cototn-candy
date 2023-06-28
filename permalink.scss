@@ -1,21 +1,3 @@
 .permalink {
-  color: #777;
-  display: none;
-}
-
-.permalink::before {
-  content: "#";
-}
-
-.permalink:hover {
-  color: $link-active-color;
-}
-
-h1:hover .permalink,
-h2:hover .permalink,
-h3:hover .permalink,
-h4:hover .permalink,
-h5:hover .permalink,
-h6:hover .permalink {
-  display: inline;
+  color: var(--bs-body-bg);
 }

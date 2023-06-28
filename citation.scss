@@ -1,19 +1,14 @@
 .citation {
-  font-size: 0.8rem;
+  font-size: $font-size-base * 0.8;
   vertical-align: super;
 }
 
 #references {
-  font-size: 0.9rem;
   margin-top: 3rem;
 }
 
 .reference {
   padding: 0.3rem;
-}
-
-.reference:target {
-  background-color: #eee;
 }
 
 .citation-author::after {

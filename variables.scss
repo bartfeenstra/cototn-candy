@@ -1,52 +1,10 @@
-@import '~@fontsource/fira-sans/300';
-@import '~@fontsource/fira-sans/300-italic';
-@import '~@fontsource/fira-sans/400';
-@import '~@fontsource/fira-sans/400-italic';
-@import '~@fontsource/fira-sans/700';
-@import '~@fontsource/fira-sans/700-italic';
-@import '~@fontsource/fira-sans/900';
-@import '~@fontsource/fira-sans/900-italic';
-
-// Font.
-$font-family-sans-serif: 'Fira Sans', sans-serif;
-$font-size-base: 1.5rem;
-$line-height-base: 1.7;
-
-// Colors.
-$cta-color: #ffc0cb;
-$cta-active-color: #ff69b4;
-$link-color: #149988;
-$link-active-color: #2a615a;
-$primary: $cta-color;
-$navbar-light-brand-color: #333333;
-// @todo Set #fff as a named variable. What to call it?
-// @todo Set #333333 as a named variable. What to call it?
-$body-color: #333333;
-// @todo Set #f7f7f7 as a named variable. What to call it?
-$body-bg: #f7f7f7;
-$border-width: 0;
-
-// Decoration.
-$link-decoration: none;
-$enable-rounded: false;
-
-// Cards.
-$card-border-width: 0;
-$card-cap-bg: #ffffff;
-
-// Icons.
-$icon-betty-32-32-url: url("/betty-32x32.png");
-$icon-language-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="%23333333" d="M363 176L246 464h47.24l24.49-58h90.54l24.49 58H480zm-26.69 186L363 279.85 389.69 362zM272 320c-.25-.19-20.59-15.77-45.42-42.67 39.58-53.64 62-114.61 71.15-143.33H352V90H214V48h-44v42H32v44h219.25c-9.52 26.95-27.05 69.5-53.79 108.36-32.68-43.44-47.14-75.88-47.33-76.22L143 152l-38 22 6.87 13.86c.89 1.56 17.19 37.9 54.71 86.57.92 1.21 1.85 2.39 2.78 3.57-49.72 56.86-89.15 79.09-89.66 79.47L64 368l23 36 19.3-11.47c2.2-1.67 41.33-24 92-80.78 24.52 26.28 43.22 40.83 44.3 41.67L255 362z"/></svg>');
-$icon-language-active-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="%23ffffff" d="M363 176L246 464h47.24l24.49-58h90.54l24.49 58H480zm-26.69 186L363 279.85 389.69 362zM272 320c-.25-.19-20.59-15.77-45.42-42.67 39.58-53.64 62-114.61 71.15-143.33H352V90H214V48h-44v42H32v44h219.25c-9.52 26.95-27.05 69.5-53.79 108.36-32.68-43.44-47.14-75.88-47.33-76.22L143 152l-38 22 6.87 13.86c.89 1.56 17.19 37.9 54.71 86.57.92 1.21 1.85 2.39 2.78 3.57-49.72 56.86-89.15 79.09-89.66 79.47L64 368l23 36 19.3-11.47c2.2-1.67 41.33-24 92-80.78 24.52 26.28 43.22 40.83 44.3 41.67L255 362z"/></svg>');
-$icon-menu-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="%23333333" d="M64 384h384v-42.67H64zm0-106.67h384v-42.66H64zM64 128v42.67h384V128z"/></svg>');
-$icon-menu-active-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="%23ffffff" d="M64 384h384v-42.67H64zm0-106.67h384v-42.66H64zM64 128v42.67h384V128z"/></svg>');
-$icon-close-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="%23333333" d="M400 145.49L366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49z"/></svg>');
-$icon-close-active-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="%23ffffff" d="M400 145.49L366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49z"/></svg>');
-$icon-search-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><path fill="%23333333" d="M464 428L339.92 303.9a160.48 160.48 0 0030.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0094.58-30.72L428 464zM209.32 319.69a110.38 110.38 0 11110.37-110.37 110.5 110.5 0 01-110.37 110.37z"/></svg>');
-$icon-search-active-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%23ffffff" d="M464 428L339.92 303.9a160.48 160.48 0 0030.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0094.58-30.72L428 464zM209.32 319.69a110.38 110.38 0 11110.37-110.37 110.5 110.5 0 01-110.37 110.37z"/></svg>');
-
-// Close button.
-$btn-close-bg: $icon-close-url;
-
-// Accessibility;
-$focus-ring-box-shadow: 0;
+@import './variables/accessibility';
+@import './variables/color';
+@import './variables/border';
+@import './variables/icon';
+@import './variables/button';
+@import './variables/card';
+@import './variables/decoration';
+@import './variables/typography';
+@import './variables/form';
+@import './variables/accordion';

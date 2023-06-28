@@ -1,0 +1,5 @@
+.hero {
+  @extend .px-4;
+  @extend .py-5;
+  background-color: $green-10;
+}

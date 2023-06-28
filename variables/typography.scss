@@ -1,0 +1,19 @@
+@import '~@fontsource/fira-sans/300';
+@import '~@fontsource/fira-sans/300-italic';
+@import '~@fontsource/fira-sans/400';
+@import '~@fontsource/fira-sans/400-italic';
+@import '~@fontsource/fira-sans/700';
+@import '~@fontsource/fira-sans/700-italic';
+@import '~@fontsource/fira-sans/900';
+@import '~@fontsource/fira-sans/900-italic';
+
+$font-family-sans-serif: 'Fira Sans', sans-serif;
+$font-size-base: 1.5rem;
+$line-height-base: 1.7;
+$lead-font-weight: 400;
+$h1-font-size: $font-size-base * 2.2;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.8;
+$h4-font-size: $font-size-base * 1.6;
+$h5-font-size: $font-size-base * 1.4;
+$h6-font-size: $font-size-base * 1.2;

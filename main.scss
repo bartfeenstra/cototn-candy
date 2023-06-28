@@ -1,7 +1,7 @@
 @import "~bootstrap/scss/functions";
 
 // Default variable overrides.
-@import "variables.scss";
+@import "variables";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/variables-dark";
 
@@ -46,19 +46,24 @@
 @import "~bootstrap/scss/utilities/api";
 
 @import "accessibility";
+@import "color";
 @import "icon";
 @import "link";
 @import "nav";
 @import "text";
-//@import "citation";
-//@import "entity";
+@import "button";
+@import "hero";
+@import "form";
+@import "citation";
+@import "person";
+@import "permalink";
+@import "entity";
+@import "accordion";
 //@import "feature";
 //@import "file";
 //@import "meta";
 //@import "navigation";
 //@import "overlay";
-//@import "permalink";
-//@import "person";
 //@import "search";
 //@import "show";
 //@import "text";

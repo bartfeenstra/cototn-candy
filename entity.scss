@@ -1,14 +1,15 @@
 .entities {
-  margin: 0;
-  padding: 0;
+  @extend .px-0;
+  @extend .mx-0;
 }
 
 .entities li {
+  @extend .px-5;
+  @extend .py-3;
+  @extend .mx-0;
   list-style: none;
-  margin-top: 0.5em;
-  padding: 0.5em;
 }
 
-.entities li.even {
-  background-color: #f7f7f7;
+.entities li:nth-child(even) {
+  background-color: $grey-2;
 }

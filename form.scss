@@ -1,0 +1,8 @@
+.form-control {
+  @extend .my-2;
+
+  &:focus {
+    outline: $spacer * 0.5 solid $cta-active-color;
+    outline-offset: 0;
+  }
+}

@@ -1,8 +1,7 @@
 <!doctype html>
-<html lang="en-US"
-      prefix="foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rel: http://purl.org/vocab/relationship/">
+<html lang="en-US">
 <head>
-    <title>Betty</title>
+    <title>Lankester & Feenstra ancestries</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Betty (https://github.com/bartfeenstra/betty)">
@@ -39,132 +38,227 @@
                 <a class="navbar-brand align-self-start" href="#_" title="Go to the home page">
                     <img src="/betty-32x32.png" alt="The Betty logo"
                          class="d-inline-block align-text-top">
-                    Betty
+                    Lankester & Feenstra ancestries
                 </a>
 
                 <div class="d-flex">
-                    <a class="icon icon-search align-self-end" href="#search" data-bs-toggle="modal"
+                    <a class="icon btn-icon icon-search align-self-end" href="#search" data-bs-toggle="modal"
                        data-bs-target="#search"
                        aria-controls="search" aria-expanded="false" aria-label="Toggle search" title="Open the search">
                     </a>
-                    <a class="icon icon-language align-self-end" href="#translations" data-bs-toggle="offcanvas"
+                    <a class="icon btn-icon icon-language align-self-end" href="#translations"
+                       data-bs-toggle="offcanvas"
                        data-bs-target="#translations"
-                       aria-controls="translations" aria-expanded="false" aria-label="Toggle translations" title="View translations">
+                       aria-controls="translations" aria-expanded="false" aria-label="Toggle translations"
+                       title="View translations">
                     </a>
-                    <a class="icon icon-menu align-self-end d-lg-none" href="#primary-navigation" data-bs-toggle="offcanvas"
+                    <a class="icon btn-icon icon-menu align-self-end d-lg-none" href="#primary-navigation"
+                       data-bs-toggle="offcanvas"
                        data-bs-target="#primary-navigation"
-                       aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation" title="View the navigation menu">
+                       aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation"
+                       title="View the navigation menu">
                     </a>
+                </div>
+            </div>
+
+            <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="primary-navigation"
+                 aria-labelledby="primary-navigation-label">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="primary-navigation-label">Menu</h5>
+                    <button type="button" class="icon btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="nav flex-column flex-lg-row">
+                        <a class="nav-link active" aria-current="page" href="#_">Home</a>
+                        <a class="nav-link" href="#_">People</a>
+                        <a class="nav-link" href="#_">Timeline</a>
+                        <a class="nav-link" href="#_">Places</a>
+                        <a class="nav-link" href="#_">Sources</a>
+                    </div>
                 </div>
             </div>
         </nav>
-        <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="primary-navigation"
-             aria-labelledby="primary-navigation-label">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="primary-navigation-label">Menu</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="nav flex-column flex-lg-row">
-                    <a class="nav-link active" aria-current="page" href="#_">Home</a>
-                    <a class="nav-link" href="#_">People</a>
-                    <a class="nav-link" href="#_">Timeline</a>
-                    <a class="nav-link" href="#_">Places</a>
-                    <a class="nav-link" href="#_">Sources</a>
-                </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="translations"
+         aria-labelledby="translations-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="translations-label">Translations</h5>
+            <button type="button" class="icon btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="nav flex-column">
+                <a href="#_"
+                   hreflang="en-US"
+                   lang="en-US"
+                   rel="canonical"
+                   class="nav-link active"
+                   aria-current="true"
+                >English</a>
+                <a href="#_"
+                   hreflang="nl-NL"
+                   lang="nl-NL"
+                   rel="alternate"
+                   class="nav-link"
+                >Nederlands</a>
             </div>
         </div>
+    </div>
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="translations"
-             aria-labelledby="translations-label">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="translations-label">Translations</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="nav flex-column">
-                    <a href="#_"
-                       hreflang="en-US"
-                       lang="en-US"
-                       rel="canonical"
-                       class="nav-link active"
-                       aria-current="true"
-                    >English</a>
-                    <a href="#_"
-                       hreflang="nl-NL"
-                       lang="nl-NL"
-                       rel="alternate"
-                       class="nav-link"
-                    >Nederlands</a>
+    <div class="modal" tabindex="-1" id="search"
+         aria-labelledby="search-label">
+        <div class="modal-dialog modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="search-label">Search</h5>
+                    <button type="button" class="icon btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </div>
-        </div>
-
-        <div class="modal" tabindex="-1" id="search"
-             aria-labelledby="search-label">
-            <div class="modal-dialog modal-fullscreen-md-down">
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="search-label">Search</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <input id="search-query" type="search"
-                                   placeholder="E.g. 'Bart'">
-                            <label for="search-query" class="visually-hidden">Search</label>
-                        </form>
-                        <div id="search-expanded">
-                            <p id="search-instructions">
-                                Use <kbd>↑</kbd> and <kbd>↓</kbd> to navigate results, or <kbd>esc</kbd> to exit the
-                                search. Search again with <kbd>s</kbd>.
-                            </p>
-                            <div id="search-results-twilight">
-                                <div id="search-results-container"></div>
-                            </div>
+                <div class="modal-body">
+                    <form>
+                        <input id="search-query" type="search" placeholder="E.g. 'Bart'" class="form-control">
+                        <label for="search-query" class="visually-hidden">Search</label>
+                    </form>
+                    <div id="search-expanded">
+                        <p id="search-instructions">
+                            Use <kbd>↑</kbd> and <kbd>↓</kbd> to navigate results, or <kbd>esc</kbd> to exit the
+                            search. Search again with <kbd>s</kbd>.
+                        </p>
+                        <div id="search-results-twilight">
+                            <div id="search-results-container"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="page-content" class="mt-5">
-            <h1>Betty</h1>
-            <p class="lead">
+    </div>
+    <div class="hero">
+        <div class="container text-center">
+            <h1 class="text-white">Lankester & Feenstra ancestries</h1>
+            <p class="lead text-white">
                 My ancestry research's main focus lies on the <a
-                    href="https://en.wikipedia.org/wiki/Lankester">Lankester</a> family name, derived from the English
-                city of <a href="https://en.wikipedia.org/wiki/Lancaster,_Lancashire">Lancaster</a>, which itself was
-                named after a fort on the river <a href="https://en.wikipedia.org/wiki/River_Lune">Lune</a>. <a
-                    href="/en/person/I0004/">My grandmother</a> is the last Lankester in my own lineage. </p>
-            <p>
-                Because history and data are fun, my research does not stop at the Lankesters I descend from. It's
-                fascinating to learn about the lives of people who came before us hundreds of years ago, so this site
-                includes other lineages, as well as people with relationships to my ancestors, such as siblings,
-                spouses, and their histories.
-            </p>
-            <p>
-                The content on this website has been collected from many public archives, often staffed by volunteers,
-                who spent countless hours digitizing historical records, providing us with a wealth of priceless
-                information.
-            </p>
-            <p>
-                I'd particularly like to thank my friend Carmen Louwe for her expertise in translating and transcribing
-                historical documents (17th century church records would have been less fun without her), and Esmée du
-                Cambout and <a href="http://members.ziggo.nl/hlankest/html/">H.F. "Bert" Lankester</a>, whose online
-                knowledge fueled my search. </p>
-            <p>
-                Media and other content has been attributed where possible. Please contact me for corrections.
+                    href="https://en.wikipedia.org/wiki/Lankester">Lankester</a> family name, derived from the
+                English city of <a href="https://en.wikipedia.org/wiki/Lancaster,_Lancashire">Lancaster</a>, which
+                itself was named after a fort on the river <a
+                    href="https://en.wikipedia.org/wiki/River_Lune">Lune</a>. <a
+                    href="/person/betty">My grandmother</a> is the last Lankester in my own lineage.
             </p>
         </div>
     </div>
-    <footer class="py-3 my-4 text-muted text-center small">
-        <p>
-            © Copyright Bart, unless otherwise credited
-        </p>
-        <hr>
-        <p>
-            A family history as told by <a href="https://github.com/bartfeenstra/betty">Betty 👵</a>
-        </p>
+    <div id="page-content" class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <p>
+                    Because history and data are fun, my research does not stop at the Lankesters I descend from. It's
+                    fascinating to learn about the lives of people who came before us hundreds of years ago, so this
+                    site
+                    includes other lineages, as well as people with relationships to my ancestors, such as siblings,
+                    spouses, and their histories.
+                </p>
+                <p>
+                    The content on this website has been collected from many public archives, often staffed by
+                    volunteers,
+                    who spent countless hours digitizing historical records, providing us with a wealth of priceless
+                    information.
+                </p>
+                <p>
+                    I'd particularly like to thank my friend Carmen Louwe for her expertise in translating and
+                    transcribing
+                    historical documents (17th century church records would have been less fun without her), and Esmée
+                    du
+                    Cambout and <a href="http://members.ziggo.nl/hlankest/html/">H.F. "Bert" Lankester</a>, whose online
+                    knowledge fueled my search. </p>
+                <p>
+                    Media and other content has been attributed where possible. Please contact me for corrections.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h2 class="card-title">Liberta Lankester</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="meta person-meta">
+                                <span class="aka">Also known as <i>Berthie</i> <a href="#reference-1" class="citation">[1]</a>, <i>Betty</i> <a
+                                        href="#reference-1" class="citation">[1]</a></span>
+                                <dl>
+                                    <div>
+                                        <dt>Birth</dt>
+                                        <dd>
+                                            <time datetime="1929-12-22">December 22, 1929</time>
+                                            in
+                                            <a href="#_"><span>Amsterdam</span></a>
+                                            <a href="#reference-2" class="citation">[2]</a></dd>
+                                    </div>
+                                    <div>
+                                        <dt>Death</dt>
+                                        <dd>
+                                            <time datetime="2015-01-17">January 17, 2015</time>
+                                            in
+                                            <a href="#_"><span>Amsterdam</span></a>
+                                            <a href="#reference-1" class="citation">[1]</a></dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                        <svg class="bd-placeholder-img card-img-bottom" width="100%" height="180"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#5D2641"></rect>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h2 class="card-title">Amsterdam</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="meta">in
+                                <a href="#_"><span>Noord-Holland</span></a>, <a href="#_"><span>Netherlands</span></a>
+                            </div>
+                        </div>
+                        <svg class="bd-placeholder-img card-img-bottom" width="100%" height="180"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#4B7973"></rect>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <section id="references" class="col-8">
+                <h2>
+                    References <a href="#references" title="Permanent link to this section"
+                                  class="permalink icon btn-icon icon-link"
+                                  aria-label="Permanent link to this section"></a>
+                </h2>
+                <ol>
+                    <li id="reference-1" class="reference"><span>
+            <span class="citation-title"><a href="#_">Personal accounts</a></span><span
+                            class="citation-location"><a href="#_">First-person account</a></span></span>
+                    </li>
+                    <li id="reference-2" class="reference"><span>
+            <span class="citation-title">Private</span><span class="citation-location">A citation is available, but has not been published in order to protect people's privacy</span></span>
+                    </li>
+                </ol>
+            </section>
+        </div>
+    </div>
+    <footer class="py-3 my-5 text-muted container">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <p>
+                    © Copyright Bart
+                </p>
+            </div>
+            <div class="col-4">
+                <p>
+                    A family history as told by <a href="https://github.com/bartfeenstra/betty">Betty 👵</a>
+                </p>
+            </div>
+        </div>
     </footer>
 </div>
 </body>

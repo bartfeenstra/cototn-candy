@@ -5,8 +5,8 @@ a {
   &:focus {
     @include text-focus();
   }
+}
 
-  &:visited {
-    color: $link-active-color;
-  }
+.hero a {
+  color: $white;
 }

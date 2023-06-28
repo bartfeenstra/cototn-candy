@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <title>Betty - Lankester & Feenstra ancestries</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Betty (https://github.com/bartfeenstra/betty)">
+    <meta name="author" content="Bart">
+    <meta name="og:title" content="Betty">
+    <meta name="og:site_name" content="Betty">
+    <meta name="og:image" content="/betty-512x512.png">
+    <link rel="icon" href="/betty.ico">
+    <link rel="manifest" href="/betty.webmanifest">
+    <link rel="stylesheet" href="/cotton_candy.css">
+    <script src="/cotton_candy.js" defer></script>
+</head>
+<body>
+<div>
+    <div id="skip-to-page-content" tabindex="-1">
+        <a class="visually-hidden-focusable" href="#page-content">Skip to main content</a>
+        <a class="visually-hidden-focusable" href="#search" data-bs-toggle="offcanvas"
+           data-bs-target="#search"
+           aria-controls="search" aria-expanded="false" aria-label="View search">
+            Skip to search
+        </a>
+        <a class="visually-hidden-focusable" href="#translations" data-bs-toggle="offcanvas"
+           data-bs-target="#translations"
+           aria-controls="translations" aria-expanded="false" aria-label="View translations">
+            Skip to translations
+        </a>
+    </div>
+    <script>
+        document.body.classList.add('with-js');
+    </script>
+    <div class="container">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand align-self-start" href="#_" title="Go to the home page">
+                    <img src="/betty-32x32.png" alt="The Betty logo"
+                         class="d-inline-block align-text-top">
+                    Lankester & Feenstra ancestries
+                </a>
+
+                <div class="d-flex">
+                    <a class="icon btn-icon icon-search align-self-end" href="#search" data-bs-toggle="modal"
+                       data-bs-target="#search"
+                       aria-controls="search" aria-expanded="false" aria-label="Toggle search" title="Open the search">
+                    </a>
+                    <a class="icon btn-icon icon-language align-self-end" href="#translations"
+                       data-bs-toggle="offcanvas"
+                       data-bs-target="#translations"
+                       aria-controls="translations" aria-expanded="false" aria-label="Toggle translations"
+                       title="View translations">
+                    </a>
+                    <a class="icon btn-icon icon-menu align-self-end d-lg-none" href="#primary-navigation"
+                       data-bs-toggle="offcanvas"
+                       data-bs-target="#primary-navigation"
+                       aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation"
+                       title="View the navigation menu">
+                    </a>
+                </div>
+            </div>
+
+            <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="primary-navigation"
+                 aria-labelledby="primary-navigation-label">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="primary-navigation-label">Menu</h5>
+                    <button type="button" class="icon btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="nav flex-column flex-lg-row">
+                        <a class="nav-link active" aria-current="page" href="#_">Home</a>
+                        <a class="nav-link" href="#_">People</a>
+                        <a class="nav-link" href="#_">Timeline</a>
+                        <a class="nav-link" href="#_">Places</a>
+                        <a class="nav-link" href="#_">Sources</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="translations"
+         aria-labelledby="translations-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="translations-label">Translations</h5>
+            <button type="button" class="icon btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="nav flex-column">
+                <a href="#_"
+                   hreflang="en-US"
+                   lang="en-US"
+                   rel="canonical"
+                   class="nav-link active"
+                   aria-current="true"
+                >English</a>
+                <a href="#_"
+                   hreflang="nl-NL"
+                   lang="nl-NL"
+                   rel="alternate"
+                   class="nav-link"
+                >Nederlands</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="search"
+         aria-labelledby="search-label">
+        <div class="modal-dialog modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="search-label">Search</h5>
+                    <button type="button" class="icon btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <input id="search-query" type="search" placeholder="E.g. 'Bart'" class="form-control">
+                        <label for="search-query" class="visually-hidden">Search</label>
+                    </form>
+                    <div id="search-expanded">
+                        <p id="search-instructions">
+                            Use <kbd>↑</kbd> and <kbd>↓</kbd> to navigate results, or <kbd>esc</kbd> to exit the
+                            search. Search again with <kbd>s</kbd>.
+                        </p>
+                        <div id="search-results-twilight">
+                            <div id="search-results-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="container text-white">
+            <h1 class="text-white">Betty</h1>
+            <div class="meta person-meta">
+                <span class="aka">Also known as <i>Berthie</i> <a href="#reference-1"
+                                                                  class="citation">[1]</a>, <i>Betty</i> <a
+                        href="#reference-1" class="citation">[1]</a></span>
+                <dl>
+                    <div>
+                        <dt>Birth</dt>
+                        <dd>
+                            <time datetime="1929-12-22">December 22, 1929</time>
+                            in
+                            <a href="#_"><span>Amsterdam</span></a>
+                            <a href="#reference-2" class="citation">[2]</a></dd>
+                    </div>
+                    <div>
+                        <dt>Death</dt>
+                        <dd>
+                            <time datetime="2015-01-17">January 17, 2015</time>
+                            in
+                            <a href="#_"><span>Amsterdam</span></a>
+                            <a href="#reference-1" class="citation">[1]</a></dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div id="page-content" class="container mt-5">
+        <div class="row justify-content-center">
+            <section id="family">
+                <div class="col-12">
+                    <h2>
+                        Family <a href="#family" title="Permanent link to this section"
+                                  class="permalink icon btn-icon icon-link"
+                                  aria-label="Permanent link to this section"></a>
+                    </h2>
+                </div>
+                <div class="family row">
+                    <div class="family-description col-6">
+                        <div class="family-description-content">
+                            <p>
+                                Liberta is the child of <span typeof="foaf:Person" property="rel:childOf"><a
+                                    href="/en/person/I0007/"><span class="person-label" typeof="foaf:Person"><span
+                                    property="foaf:individualName">Dirk Jacobus</span> <span property="foaf:familyName">Lankester</span></span></a></span>,
+                                <span typeof="foaf:Person" property="rel:childOf"><a href="/en/person/I0008/"><span
+                                        class="person-label" typeof="foaf:Person"><span property="foaf:individualName">Jannigje</span> <span
+                                        property="foaf:familyName">Palsen</span></span></a></span>. They grew up with 4
+                                siblings.
+                            </p>
+                            <div class="accordion accordion-flush">
+                                <div class="accordion-item">
+                                    <h3>
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                                data-bs-target="#ancestral-names-1" aria-expanded="false"
+                                                aria-controls="ancestral-names-1" role="button" title="Expand and collapse this section">
+                                            Ancestral names
+                                        </button>
+                                    </h3>
+                                    <div id="ancestral-names-1" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <p>
+                                                Ancestral names include Admiraal, Adriaanse, Benders, Beun, Bilkers,
+                                                Both, Boumans, Breugelmans, Brom, Brugge, Capelle, Cornelisse, Cuijper,
+                                                Culderij, Curtenius, De Coster, De Jager, De Keijzer, De Quaasteniet, De
+                                                Vriesze, De Wagemaker, De Weerdt, Den Beste, Den Blaauwe, Den Blaauwen,
+                                                Derks, Ekkelboom, Faro, Hagenaars, Heijsman, Heikoop, Henderikx,
+                                                Hengstman, Hoff, Jacobs, Jacobse, Jacobze, Jacopse, Janse, Janssen,
+                                                Joose, Klaas, Klein, Kleine, Klink, Konings, Kuiper, Kulderij,
+                                                Lambrechtse, Lanckester, Lankester, Lanooij, Lanquester, Lansen,
+                                                Leenhouts, Lenout, Luteijn, Machielsen, Maertens, Meskers, Muijen,
+                                                Nuijts, Overeem, Pals, Palsen, Pieterse, Reiniers, Rijkhart, Roskam,
+                                                Roskom, Smits, Snel, Sonius, Stip, Suijkerbuik, Tukkers, Van den Berg,
+                                                Van den Brande, Van der Esch, Van der Have, Van der Vlies, Van der
+                                                Wielen, Van Ling, Van Meurs, Van Parijs, Van Rees, Van Wijngaarden,
+                                                Visser, Willemse.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="family-breakdown col-6">
+                        <h3>Siblings</h3>
+                        <ul class="entities">
+                            <li class="odd" typeOf="foaf:Person" property="rel:siblingOf">
+                                <a href="/en/person/I0087/"><span class="person-label" typeof="foaf:Person"><span
+                                        property="foaf:individualName">Bob</span> <span property="foaf:familyName">Lankester</span></span></a>
+                                <div class="meta person-meta">
+                                    <dl>
+                                        <div>
+                                            <dt>Birth</dt>
+                                            <dd>December 2, 1932 in
+                                                <a href="/en/place/P0000/"><span>Amsterdam</span></a>
+                                                <a href="#reference-2" class="citation">[2]</a></dd>
+                                        </div>
+                                        <div>
+                                            <dt>Death</dt>
+                                            <dd>December 4, 1932 in
+                                                <a href="/en/place/P0000/"><span>Amsterdam</span></a>
+                                                <a href="#reference-2" class="citation">[2]</a></dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="even" typeOf="foaf:Person" property="rel:siblingOf">
+                                <a href="/en/person/I0084/"><span class="person-label" typeof="foaf:Person"><span
+                                        property="foaf:individualName">Dirk Jacobus</span> <span
+                                        property="foaf:familyName">Lankester</span></span></a>
+                                <div class="meta person-meta"><span class="aka">Also known as <span class="person-label"
+                                                                                                    typeof="foaf:Person"><span
+                                        property="foaf:individualName">Dik</span></span> <a href="#reference-1"
+                                                                                            class="citation">[1]</a></span>
+                                    <dl>
+                                        <div>
+                                            <dt>Birth</dt>
+                                            <dd>April 3, 1923 in
+                                                <a href="/en/place/P0003/"><span>Ilpendam</span></a>
+                                                <a href="#reference-2" class="citation">[2]</a></dd>
+                                        </div>
+                                        <div>
+                                            <dt>Death</dt>
+                                            <dd>1999</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="odd" typeOf="foaf:Person" property="rel:siblingOf">
+                                <a href="/en/person/I0092/"><span class="person-label" typeof="foaf:Person"><span
+                                        property="foaf:individualName">Jan</span> <span property="foaf:familyName">Lankester</span></span></a>
+                                <div class="meta person-meta">
+                                    <dl>
+                                        <div>
+                                            <dt>Birth</dt>
+                                            <dd>December 4, 1940 in
+                                                <a href="/en/place/P0000/"><span>Amsterdam</span></a>
+                                                <a href="#reference-2" class="citation">[2]</a></dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="even" typeOf="foaf:Person" property="rel:siblingOf">
+                                <a href="/en/person/I0090/"><span class="person-label" typeof="foaf:Person"><span
+                                        property="foaf:individualName">Johanna Geertruida</span> <span
+                                        property="foaf:familyName">Lankester</span></span></a>
+                                <div class="meta person-meta">
+                                    <dl>
+                                        <div>
+                                            <dt>Birth</dt>
+                                            <dd>May 15, 1936 in
+                                                <a href="/en/place/P0000/"><span>Amsterdam</span></a>
+                                                <a href="#reference-2" class="citation">[2]</a></dd>
+                                        </div>
+                                        <div>
+                                            <dt>Death</dt>
+                                            <dd>September 18, 1936 in
+                                                <a href="/en/place/P0000/"><span>Amsterdam</span></a>
+                                                <a href="#reference-2" class="citation">[2]</a></dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="family">
+                    <div class="family-description">
+                        <div class="family-description-content">
+                            <p>
+                                Liberta had a child with <span typeof="foaf:Person" property="rel:spouseOf"><a
+                                    href="/en/person/I0005/"><span class="person-label" typeof="foaf:Person"><span
+                                    property="foaf:individualName">Johan</span> <span
+                                    property="foaf:familyName">De Boer</span></span></a></span>.</p>
+                        </div>
+                    </div>
+                    <div class="family-breakdown">
+                        <ul class="entities"></ul>
+                    </div>
+                </div>
+            </section>
+            <section id="events" class="col-8">
+                <h2>
+                    Timeline <a href="#events" title="Permanent link to this section"
+                                class="permalink icon btn-icon icon-link"
+                                aria-label="Permanent link to this section"></a>
+                </h2>
+                <ul class="entities">
+                    <li class="odd">
+                        <a href="#_">Birth</a>
+                        <div class="meta">
+                            December 22, 1929 in
+                            <a href="#_"><span>Amsterdam</span></a>
+                            <a href="#_" class="citation">[2]</a></div>
+                    </li>
+                    <li class="even">
+                        <a href="#_">Birth</a> of <a href="#_"><span class="person-label"
+                                                                     typeof="foaf:Person"><span
+                            property="foaf:individualName">Johan</span> <span
+                            property="foaf:familyName">De Boer</span></span></a>
+                        <div class="meta">
+                            June 20, 1930 in
+                            <a href="#_"><span>Amsterdam</span></a>
+                            <a href="#_" class="citation">[1]</a></div>
+                    </li>
+                    <li class="odd">
+                        <a href="#_">Birth</a> of <a href="#_"><span class="person-label"
+                                                                     typeof="foaf:Person"><span
+                            property="foaf:individualName">Bob</span> <span
+                            property="foaf:familyName">Lankester</span></span></a>
+                        <div class="meta">
+                            December 2, 1932 in
+                            <a href="#_"><span>Amsterdam</span></a>
+                            <a href="#_" class="citation">[2]</a></div>
+                    </li>
+                    <li class="even">
+                        <a href="#_">Death</a> of <a href="#_"><span class="person-label"
+                                                                     typeof="foaf:Person"><span
+                            property="foaf:individualName">Bob</span> <span
+                            property="foaf:familyName">Lankester</span></span></a>
+                        <div class="meta">
+                            December 4, 1932 in
+                            <a href="#_"><span>Amsterdam</span></a>
+                            <a href="#_" class="citation">[2]</a></div>
+                    </li>
+                    <li class="odd">
+                        <a href="#_">Birth</a> of <a href="#_"><span class="person-label"
+                                                                     typeof="foaf:Person"><span
+                            property="foaf:individualName">Johanna Geertruida</span> <span property="foaf:familyName">Lankester</span></span></a>
+                        <div class="meta">
+                            May 15, 1936 in
+                            <a href="#_"><span>Amsterdam</span></a>
+                            <a href="#_" class="citation">[2]</a></div>
+                    </li>
+                    <li class="even">
+                        <a href="#_">Death</a> of <a href="#_"><span class="person-label"
+                                                                     typeof="foaf:Person"><span
+                            property="foaf:individualName">Johanna Geertruida</span> <span property="foaf:familyName">Lankester</span></span></a>
+                        <div class="meta">
+                            September 18, 1936 in
+                            <a href="#_"><span>Amsterdam</span></a>
+                            <a href="#_" class="citation">[2]</a></div>
+                    </li>
+                    <li class="odd">
+                        <a href="#_">Death</a> of <a href="#_"><span class="person-label"
+                                                                     typeof="foaf:Person"><span
+                            property="foaf:individualName">Adrianus</span> <span
+                            property="foaf:familyName">Palsen</span></span></a>
+                        <div class="meta">
+                            December 25, 1936 in
+                            <a href="#_"><span>Amsterdam</span></a>
+                        </div>
+                    </li>
+                    <li class="even">
+                        <a href="#_">Birth</a> of <a href="#_"><span class="person-label"
+                                                                     typeof="foaf:Person"><span
+                            property="foaf:individualName">Jan</span> <span
+                            property="foaf:familyName">Lankester</span></span></a>
+                        <div class="meta">
+                            December 4, 1940 in
+                            <a href="#_"><span>Amsterdam</span></a>
+                            <a href="#_" class="citation">[2]</a></div>
+                    </li>
+                    <li class="odd">
+                        <a href="#_">Marriage</a> with <a href="#_"><span class="person-label"
+                                                                          typeof="foaf:Person"><span
+                            property="foaf:individualName">Johan</span> <span
+                            property="foaf:familyName">De Boer</span></span></a>
+                        <div class="meta">
+                            June 19, 1953 in
+                            <a href="#_"><span>Amsterdam</span></a>
+                        </div>
+                    </li>
+                    <li class="even">
+                        <a href="#_">Death</a> of <a href="#_"><span class="person-label"
+                                                                     typeof="foaf:Person"><span
+                            property="foaf:individualName">Jannigje</span> <span
+                            property="foaf:familyName">Palsen</span></span></a>
+                        <div class="meta">
+                            August 23, 1984 in
+                            <a href="#_"><span>Amsterdam</span></a>
+                            <a href="#_" class="citation">[2]</a></div>
+                    </li>
+                    <li class="odd">
+                        <a href="#_">Death</a> of <a href="#_"><span class="person-label"
+                                                                     typeof="foaf:Person"><span
+                            property="foaf:individualName">Dirk Jacobus</span> <span
+                            property="foaf:familyName">Lankester</span></span></a>
+                        <div class="meta">
+                            August 18, 1986 in
+                            <a href="#_"><span>Amsterdam</span></a>
+                            <a href="#_" class="citation">[2]</a></div>
+                    </li>
+                    <li class="even">
+                        <a href="#_">Death</a> of <a href="#_"><span class="person-label"
+                                                                     typeof="foaf:Person"><span
+                            property="foaf:individualName">Dirk Jacobus</span> <span
+                            property="foaf:familyName">Lankester</span></span></a>
+                        <div class="meta">
+                            1999
+                        </div>
+                    </li>
+                    <li class="odd">
+                        <a href="#_">Death</a> of <a href="#_"><span class="person-label"
+                                                                     typeof="foaf:Person"><span
+                            property="foaf:individualName">Johan</span> <span
+                            property="foaf:familyName">De Boer</span></span></a>
+                        <div class="meta">
+                            March 10, 1999 in
+                            <a href="#_"><span>Amsterdam</span></a>
+                            <a href="#_" class="citation">[1]</a></div>
+                    </li>
+                    <li class="even">
+                        <a href="#_">Death</a>
+                        <div class="meta">
+                            January 17, 2015 in
+                            <a href="#_"><span>Amsterdam</span></a>
+                            <a href="#_" class="citation">[1]</a></div>
+                    </li>
+                    <li class="odd">
+                        <a href="#_">Funeral</a>
+                        <div class="meta">
+                            January 23, 2015 in
+                            <a href="#_"><span>Purmerend</span></a>
+                            <a href="#_" class="citation">[1]</a></div>
+                    </li>
+                </ul>
+            </section>
+            <section id="references" class="col-8">
+                <h2>
+                    References <a href="#references" title="Permanent link to this section"
+                                  class="permalink icon btn-icon icon-link"
+                                  aria-label="Permanent link to this section"></a>
+                </h2>
+                <ol>
+                    <li id="reference-1" class="reference"><span>
+            <span class="citation-title"><a href="#_">Personal accounts</a></span><span
+                            class="citation-location"><a href="#_">First-person account</a></span></span>
+                    </li>
+                    <li id="reference-2" class="reference"><span>
+            <span class="citation-title">Private</span><span class="citation-location">A citation is available, but has not been published in order to protect people's privacy</span></span>
+                    </li>
+                </ol>
+            </section>
+        </div>
+    </div>
+    <footer class="py-3 my-5 text-muted container">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <p>
+                    © Copyright Bart
+                </p>
+            </div>
+            <div class="col-4">
+                <p>
+                    A family history as told by <a href="https://github.com/bartfeenstra/betty">Betty 👵</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

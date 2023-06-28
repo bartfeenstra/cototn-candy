@@ -1,5 +1,4 @@
 .navbar-brand {
-  color: #333 !important;
   text-decoration: none;
 }
 
@@ -11,7 +10,13 @@
   }
 
   &.active {
-    box-shadow: 0 0.2rem $link-active-color;
+    box-shadow: -0.2rem 0 $link-active-color;
     color: $link-active-color;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar .nav-link.active {
+    box-shadow: 0 0.2rem $link-active-color;
   }
 }

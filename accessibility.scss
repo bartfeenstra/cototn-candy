@@ -6,7 +6,7 @@
 @mixin text-focus {
   background-color: $cta-active-color;
   box-shadow: 0 -2px $cta-active-color, 0 0.2rem $body-color;
-  color: #fff;
+  color: $black;
   outline: none;
   text-decoration: none;
 }
@@ -19,6 +19,6 @@
   z-index: 1500;
 }
 
-//*::selection {
-//  @include text-focus()
-//}
+*::selection {
+  @include text-focus()
+}

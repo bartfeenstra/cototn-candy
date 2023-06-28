@@ -1,14 +1,13 @@
 .icon {
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: middle;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
-  margin: 0.75rem;
+  background-size: 2rem;
+  box-sizing: content-box;
 
-  &:hover, &:focus {
+  &:hover {
     background-color: $cta-active-color;
   }
 }
@@ -34,5 +33,13 @@
 
   &:hover, &:focus {
     background-image: $icon-search-active-url !important;
+  }
+}
+
+.icon-link {
+  background-image: $icon-link-url;
+
+  &:hover, &:focus {
+    background-image: $icon-link-active-url !important;
   }
 }
