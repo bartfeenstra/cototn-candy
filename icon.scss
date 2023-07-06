@@ -6,10 +6,17 @@
   background-position: center;
   background-size: 2rem;
   box-sizing: content-box;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 2rem;
 
   &:hover {
     background-color: $cta-active-color;
   }
+}
+
+.icon-close {
+  mask-image: $icon-close-url;
 }
 
 .icon-language {
@@ -42,4 +49,28 @@
   &:hover, &:focus {
     background-image: $icon-link-active-url !important;
   }
+}
+
+.icon-previous {
+  mask-image: $icon-previous-url;
+}
+
+.icon-next {
+  mask-image: $icon-next-url;
+}
+
+.icon-info {
+  mask-image: $icon-info-url;
+}
+
+.icon-download {
+  mask-image: $icon-download-url;
+}
+
+.icon-fullscreen {
+  mask-image: $icon-fullscreen-url;
+}
+
+.icon-loading {
+  mask-image: $icon-loading-url;
 }
